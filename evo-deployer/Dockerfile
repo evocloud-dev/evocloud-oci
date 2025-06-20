@@ -29,7 +29,7 @@ RUN dnf install -y epel-release && \
 # Stage 2: Runtime Environment \
 FROM build-stage AS final-stage
 
-ARG PAAS_VERSION="0.1.2"
+ARG PAAS_VERSION="0.1.0"
 ARG HOMEDIR="/opt/EVOCLOUD"
 
 COPY ansible.cfg /etc/ansible
